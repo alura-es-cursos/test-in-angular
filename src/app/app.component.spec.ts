@@ -8,19 +8,19 @@ describe('AppComponent', () => {
     declarations: [AppComponent]
   }));
 
-  it('should create the app', () => {
+  it('It should create the app when the application is initialized', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'test-in-angular'`, () => {
+  it('It should have "test-in-angular" as title when the app component loads', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('test-in-angular');
   });
 
-  it('should render title', () => {
+  it('It should render title correctly when the title is displayed', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
