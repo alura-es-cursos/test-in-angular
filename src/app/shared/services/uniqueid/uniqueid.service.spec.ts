@@ -16,5 +16,20 @@ describe(UniqueidService.name, () => {
     const id = service.generateUniqueIdWithPrefix('app');
     expect(id).toContain('app-');
   });
+
+  it(`#${UniqueidService.prototype.generateUniqueIdWithPrefix.name}' should throw an error when called without prefix)`, () => {
+    expect(() => {
+      service.generateUniqueIdWithPrefix('');
+    }).toThrowError('Prefix can not be empty');
+  });
+
+ 
+  it(`#${UniqueidService.prototype.generateUniqueIdWithPrefix.name}' should return the correct number of generated IDs`, () => {
+    const initCount = service.getNumberOfGenerateUniqueIds();
+    service.generateUniqueIdWithPrefix('test');
+    service.generateUniqueIdWithPrefix('test');
+    const finalCount = service.getNumberOfGenerateUniqueIds();
+    expect(finalCount).toBe(initCount+2);
+  })
 });
 

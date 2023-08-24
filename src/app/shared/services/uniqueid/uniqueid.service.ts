@@ -22,7 +22,7 @@ export class UniqueidService {
     return this.numberOfGenerateIds;
   }
 
-  private generateUniqueId() {
-    return uuidv4;
+  private generateUniqueId() :string {
+    return uuidv4();
   }
 }
