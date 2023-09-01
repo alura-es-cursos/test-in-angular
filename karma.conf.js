@@ -8,8 +8,15 @@ module.exports = function (config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
+      require('karma-firefox-launcher'),
+      require('karma-edge-launcher'),
+      require('karma-opera-launcher'),
+      require('karma-brave-launcher'),
+      require('karma-safari-launcher'),
+      require('karma-junit-reporter'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
+      require('karma-junit-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
@@ -33,7 +40,7 @@ module.exports = function (config) {
       ]
     },
     reporters: ['progress', 'kjhtml', ],
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'Firefox', 'Edge', 'Opera', 'Brave'],
     restartOnFileChange: true,
   });
 };

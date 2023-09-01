@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 116.0.5845.96 (Linux x86_64)" package="" timestamp="2023-08-26T02:31:37" id="0" hostname="fedora" tests="10" errors="0" failures="0" time="0.094">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/116.0.5845.96 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent It should render title correctly when the title is displayed" time="0.069" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent It should have &quot;test-in-angular&quot; as title when the app component loads" time="0.006" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent It should create the app when the application is initialized" time="0.006" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).AppComponent"/>
+  <testcase name="ServicesService should be created" time="0.003" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).ServicesService"/>
+  <testcase name="UniqueidService #generateUniqueIdWithPrefix' should return the correct number of generated IDs" time="0.002" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).UniqueidService"/>
+  <testcase name="UniqueidService should be created" time="0.001" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).UniqueidService"/>
+  <testcase name="UniqueidService #generateUniqueIdWithPrefix' should throw an error when called without prefix)" time="0.002" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).UniqueidService"/>
+  <testcase name="UniqueidService #generateUniqueIdWithPrefix' should generate id when called with prefix" time="0.001" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).UniqueidService"/>
+  <testcase name="LoginComponent should create" time="0.002" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).LoginComponent"/>
+  <testcase name="RegisterComponent should create" time="0.002" classname="Chrome_Headless_116_0_5845_96_(Linux_x86_64).RegisterComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

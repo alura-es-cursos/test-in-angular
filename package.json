@@ -1,12 +1,17 @@
 {
   "name": "test-in-angular",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test-common": "ng test --browsers Chrome,Firefox",
+    "test-uncommon": "ng test ----browsers Opera,Brave",
+    "test-win": "ng test --browsers Edge",
+    "test-ios": "ng test --browsers Safari",
+    "test-ci": "ng test --watch=false --reporters junit --browsers ChromeHeadless"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +23,7 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
+    "karma-junit-reporter": "^2.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "uuid": "^9.0.0",
@@ -31,10 +37,15 @@
     "@types/uuid": "^9.0.2",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
+    "karma-brave-launcher": "^1.0.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
+    "karma-edge-launcher": "^0.4.2",
+    "karma-firefox-launcher": "^2.1.2",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "karma-opera-launcher": "^1.0.0",
+    "karma-safari-launcher": "^1.0.0",
     "typescript": "~5.1.3"
   }
 }
