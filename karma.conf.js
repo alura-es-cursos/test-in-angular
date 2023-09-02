@@ -40,7 +40,7 @@ module.exports = function (config) {
       ]
     },
     reporters: ['progress', 'kjhtml', ],
-    browsers: ['Chrome', 'Firefox', 'Edge', 'Opera', 'Brave'],
+    browsers: ['Chrome'],
     restartOnFileChange: true,
   });
 };
