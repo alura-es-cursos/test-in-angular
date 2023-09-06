@@ -24,15 +24,30 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should should have been called with this data', () => {
+    spyOn(console, 'log');
+    component.loginForm.controls['email'].setValue('test@example.com');
+    component.loginForm.controls['password'].setValue('password');
+    component.onSubmit();
+    expect(console.log).toHaveBeenCalledWith({
+      email: 'test@example.com',
+      password: 'password',
+      rememberMe: false
+    })
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+ 
+
+
+
+
+  afterEach(() => {
+    fixture.destroy();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  afterAll(() => {
+    TestBed.resetTestingModule();
   });
+  
+
 });
